@@ -11,13 +11,13 @@ body{
    
 }
 .game-title{
-    font-size: 58px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 600;
 }
 .game-description{
     margin: 15px 0px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #534C64;
     font-style: normal;
     font-weight: 400;
@@ -28,6 +28,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* header section starts */
 header{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -43,7 +44,6 @@ nav{
 }
 .nav-logo{
     padding-left: 30px;
-    /* width: 50%; */
     display: flex;
 }
 
@@ -103,10 +103,10 @@ nav{
 }
 
 .banner-goat{
-    font-size: 6.20rem;
+    font-size: 5.20rem;
     font-style: normal;
    font-weight: 800;
-   margin: 30px 0px;
+   margin: 25px 0px;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -141,7 +141,7 @@ nav{
     margin:  100px 0px 55px;
 }
 .online-games{
-    /* text-align: center; */
+   
      margin: 90px;
 }
 
@@ -153,7 +153,7 @@ nav{
 
 }
 .card{
-    /* width: 60%; */
+   
     justify-content: space-around;
 }
 .card img {
@@ -164,7 +164,7 @@ nav{
 /* now play games section starts */
 
 .play-game-container{
-  text-align: center;
+  text-align: left;
   padding-right: 40px;
   width: 100%;
   
@@ -196,4 +196,89 @@ nav{
     position: relative;
     top: -110px;
     left: -60px;
+}
+
+/* pop up section starts */
+
+.pop-up{
+    margin-bottom: 50px ;
+}
+
+.pop-up-container{
+    display: flex;
+    width: 90%;
+
+    margin: auto;
+   display: flex;
+  flex-wrap: wrap;
+    Justify-content:center;
+    align-items:center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.pop-up-button p{
+    font-size: 14px;
+}
+.pop-up-button{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    padding: 8px;
+    background-color: #FFF;
+    border-radius: 25px;
+}
+
+.pop-up-button:hover{
+    color: #F948B2;
+    border: 1px solid #FF42A5;
+    border-radius: 20px;
+}       
+.pop-up-button img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* footer section starts */
+footer{
+    /* height: 100vh; */
+    text-align: center;
+    background: #0B0223;
+    color: white;
+   
+}
+.footer-container{
+    width: 70%;
+    margin: auto;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    padding-top: 40px;
+}
+.life-style{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    /* gap: 50px; */
+}
+
+.social-link{
+    margin: 40px 0px;
+}
+.social-link i{
+  margin: 10px;
+  width: 30px;
+ 
+}
+.footer-policy{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.copy-right{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
 }
