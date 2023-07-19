@@ -37,9 +37,10 @@ header{
 nav{
     display: flex;
    align-items: center;
-   margin: 40px;
+   margin: 20px;
    padding: 30px;
    justify-content: space-between;
+   align-items: center;
   
 }
 .nav-logo{
@@ -63,12 +64,13 @@ nav{
 .nav-items ul{
     display: flex;
     list-style: none;
+    align-items: center;
    
 }
 .nav-items ul li{
     margin-right: 30px;
-    font-size: 1.20rem;
-    padding: 20px;
+    font-size: 1.10rem;
+    padding: 18px;
 }
 .social-media{
     border-radius: 8px;
@@ -113,20 +115,30 @@ nav{
     -webkit-text-fill-color: transparent;
 }
 .btn-primary{
-    padding: 21px 40px;
+    padding: 18px 30px;
     font-size: 1.20rem;
     color: #FFF;
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+}
+.btn-primary:hover{
+    color:black ;
+    background: linear-gradient(45deg, #fbd7ea,#FF42A5 ) ;
 }
 .btn-secondary{
     border-radius: 48px;
     background: #4EC5F7;
     font-size: 1.20rem;
     color: #FFF;
-    padding: 21px 40px;
+    padding: 18px 30px;
+    border: none;
+}
+.btn-secondary:hover{
+    color:black ;
+    background: linear-gradient(45deg, #f863b3,#4EC5F7)
 }
 
 .banner-img img{
@@ -152,6 +164,7 @@ nav{
     text-align: center;
 
 }
+
 .card{
    
     justify-content: space-around;
@@ -159,6 +172,14 @@ nav{
 .card img {
     width: 90%;
     height: 70%;
+}
+.card img:hover{
+    cursor: pointer;
+    border: 2px solid  #FF42A5;
+    box-shadow: 5px 5px 10px  #FF42A5;
+    border-radius: 12px;
+    opacity: 0.7;
+    /* background-image:url( <i class="fa-solid fa-play" style="color: #f71d69;"></i>); */
 }
 
 /* now play games section starts */
@@ -247,7 +268,7 @@ footer{
    
 }
 .footer-container{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 .footer-title{
@@ -268,9 +289,13 @@ footer{
     margin: 40px 0px;
 }
 .social-link i{
-  margin: 10px;
-  width: 30px;
  
+ 
+}
+.fa-brands{
+    margin: 10px;
+    /* width: 30px; */
+    font-size: 30px;
 }
 .footer-policy{
     display: flex;
@@ -281,4 +306,119 @@ footer{
     text-align: center;
     padding-bottom: 30px;
     margin-top: 30px;
+}
+
+/* media queary section starts */
+
+@media screen and (max-width:576px) {
+    nav, .nav-items ul, .banner, .card-items,
+    .play-game {
+        flex-direction: column;
+    }
+    .nav-items ul li{
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    /* banner section starts */
+    .game-title, .banner-goat {
+        /* text-align:center ; */
+    }
+
+    .banner-container{
+        width: 90%;
+    }
+    .game-title{
+        font-size: 30px;
+    }
+    .game-description{
+        margin: 10px 0px;
+        font-size: .80rem;
+    }
+    .banner-goat{
+        font-size: 4rem;
+        margin: 15px 0px;
+    }
+    .banner-container li{
+        font-size: .85rem;
+    }
+    .btn-primary, .btn-secondary{
+        padding: 14px 22px;
+        font-size: 1rem;
+    }
+    /* online-game section starts */
+    .online-games{
+        margin: 20px;
+    }
+    .games-content{
+        margin: 40px 0px 2px;
+    }
+    .card-items{
+        width: 90%;
+        margin: 30px 0px;
+    }
+    .card{
+        margin-top: 20px;
+        /* margin: auto; */
+        padding-left: 40px ;
+        /* text-align: center; */
+    }
+    .card-items{
+        /* text-align: center; */
+    }
+    /* now play game section starts */
+    .play-game-container{
+        text-align: center;
+        padding: 0px;
+    }
+    .instant{
+        /* width: 80%; */
+        margin: auto;
+        padding: 20px 0px;
+    }
+    .play-game-box{
+        margin-left: 130px;
+    }
+
+    /* pop-up section starts */
+    .pop-up-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .pop-up-button{
+        margin: 8px;
+        padding: 5px;
+    }
+    .pop-up-button p{
+        font-size: 12px;
+    }
+    /* footer section starts */
+    .footer-container{
+        width: 80%;
+    }
+    .life-style{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .life-style p,  .footer-policy p{
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+    .social-link{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-policy{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* .footer-policy p{
+        font-size: 14px;
+        margin: 10px 0px; */
+    
+    .copy-right{
+        font-size: 14px;
+    }
+
 }
