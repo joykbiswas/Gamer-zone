@@ -413,12 +413,68 @@ footer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    /* .footer-policy p{
-        font-size: 14px;
-        margin: 10px 0px; */
     
     .copy-right{
         font-size: 14px;
+    }
+
+}
+
+/* medium device query */
+@media screen and (min-width:576px) and (max-width:891px){
+    nav, .nav-items ul, .banner, .card-items,
+    .play-game {
+        flex-direction: column;
+    }
+    .card-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    .game-title{
+        font-size: 40px;
+    }
+    .game-description{
+        margin: 20px 0px;
+        font-size: 1.2orem;
+    }
+    .banner-goat{
+        font-size: 4.20rem;
+        margin: 15px 0px;
+    }
+    .banner-container li{
+        font-size: 1.20rem;
+    }
+    .play-game-container{
+        text-align: center;
+    }
+    .play-game-box{
+        padding-left: 140px;
+    }
+
+    .footer-container{
+        width: 80%;
+    }
+    .life-style{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .life-style p,  .footer-policy p{
+        font-size: 18px;
+        margin: 15px 0px;
+    }
+    .social-link{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-policy{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .copy-right{
+        font-size: 18px;
     }
 
 }
